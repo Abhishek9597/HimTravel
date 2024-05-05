@@ -107,7 +107,7 @@ header nav ul li a {
 }
 
 .destination-card img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     border-radius: 5px;
 }
