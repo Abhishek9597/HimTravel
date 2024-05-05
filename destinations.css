@@ -1,0 +1,132 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* Destination card styles */
+.destinations {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destinations .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+}
+
+.destination-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.destination-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-content .container {
+    display: flex;
+    justify-content: center;
+}
+
+.call-btn,
+.whatsapp-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+.whatsapp-btn {
+    margin-top: 5px;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover {
+    background-color: #0056b3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.back-to-home-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.back-to-home-btn:hover {
+    background-color: #0056b3;
+}

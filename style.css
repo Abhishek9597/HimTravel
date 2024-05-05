@@ -1,0 +1,182 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Hero section styles */
+.hero {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero .container {
+    position: relative;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 1px; /* Adjust margin as needed */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Destinations section styles */
+.destinations {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.destinations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.destinations .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+}
+
+.destination-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.destination-card h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.destination-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Centering content */
+}
+
+footer .container {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center; /* Centering content */
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    margin-right: 20px; /* Adjust spacing between buttons */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center; /* Centering content */
+}
+
+/* Button styles */
+.call-btn,
+.whatsapp-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Button margin */
+.whatsapp-btn {
+    margin-top: 5px;
+}
+
+/* Button hover effect */
+.call-btn:hover,
+.whatsapp-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
