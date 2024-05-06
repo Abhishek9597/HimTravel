@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Himachal Pradesh Tours</title>
+    <h2>ContactUs: +91-9418706750</h2>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Himachal Pradesh Tours</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us</title>
@@ -35,19 +60,30 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     var phone = document.getElementById("phone").value;
     var message = document.getElementById("message").value;
     
-    var phoneNumber = +91-9418706750; // Replace with your phone number including country code
+    var phoneNumber = +919418706750; // Replace with your phone number including country code
     
-    // Construct the WhatsApp message with the collected data
-    var whatsappMessage = "Name: " + name + "\nEmail: " + email + "\nPhone Number: " + phone + "\nMessage: " + message;
+  // Construct the WhatsApp message with the collected data
+var whatsappMessage = "Name: " + name + "%0A" +
+                     "Email: " + email + "%0A" +
+                     "Phone Number: " + phone + "%0A" +
+                     "Message: " + message;
     
     // Construct the WhatsApp URL with the message
-    var whatsappUrl = "https://wa.me/+9418706750?text=" + phoneNumber + "&text=" + encodeURIComponent(whatsappMessage);
+    var whatsappUrl = "https://wa.me/"+9418706750+ "?text=" + encodeURIComponent(whatsappMessage);
     
     // Open the WhatsApp URL in a new tab
-    window.open(whatsappUrl, 'https://wa.me/+919418706750');
+    window.open("https://wa.me/+919418706750",'_blank');
 });
 </script>
-
+<footer>
+    <div class="container">
+       <a href="tel:+91-9418706750" class="call-btn">Call Us</a>
+    </div>
+    <div class="container">
+       <a href="https://wa.me/+919418706750" class="whatsapp-btn" target="_blank">WhatsApp Us</a>
+    </div>
+    <a href="index.html" class="back-to-home-btn">Back to Home</a>
+      <p>&copy; 2024 Himachal Pradesh Tours With Mr Virender Kumar</p>
+</footer>
 </body>
-<a href="index.html" class="back-to-home-btn">Back to Home</a>
 </html>
